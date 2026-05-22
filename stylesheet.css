@@ -1,0 +1,95 @@
+@font-face { font-family: 'noorehira';
+src: url('fonts/noorehira-Regular.woff2') format('woff2'); font-display: swap; }
+
+@font-face { font-family: 'STIXTwoText';
+src: url('fonts/STIXTwoText-SemiBold.woff2') format('woff2'); font-display: swap; }
+
+@font-face { font-family: 'CharisSIL';
+src: url('fonts/CharisSIL-Regular.woff2') format('woff2'); font-display: swap; }
+
+@font-face { font-family: 'CharisSIL';
+src: url('fonts/CharisSIL-Bold.woff2') format('woff2'); font-display: swap; font-weight: bold; }
+
+@font-face { font-family: 'CharisSIL';
+src: url('fonts/CharisSIL-Italic.woff2') format('woff2'); font-display: swap; font-style: italic; }
+
+@font-face { font-family: 'Carattere';
+src: url('fonts/Carattere-Regular.woff2'); format('woff2'); font-display: swap; }
+/* script */
+
+:root {
+--font: "Inter", "Open Sans", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+--font2: Georgia, "Times New Roman", Times, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+* { box-sizing: border-box; }
+html { font-size: 14px; -webkit-font-smoothing: antialiased; }
+body { margin: 0; padding: 0; font-family: CharisSIL, var(--font2); font-size: 1.1rem; line-height: 1.3; color: #333; }
+h1 { font-family: Carattere, var(--font); }
+h2, h3, h4, h5, h6 { font-family: STIXTwoText, var(--font); }
+h1 { font-size: 1.8rem; }
+h2 { font-size: 1.6rem; }
+h3 { font-size: 1.45rem; }
+h4 { font-size: 1.3rem; }
+h5 { font-size: 1.15rem; }
+a { color: #005500; text-decoration: none; }
+header { display: grid; background: #285E34; height: 250px; background-image: url("images/masjid.jpg"); background-repeat: no-repeat;
+background-size: cover; background-position: center bottom; color: #fff; padding: 1rem;
+border-bottom: 5px solid #2E8B00; }
+h4.title { margin-top: 0; font-family: Carattere, var(--font2); font-size: 3rem; font-weight: bold; text-shadow: -1px 1px 5px #555; }
+nav { display: flex; flex-wrap: wrap;
+/* justify-content: center; */
+background: #2E8B00; box-shadow: -2px 2px 6px rgba(0,0,0,0.27);
+/* border-bottom: 3px solid #1A3C21; */
+}
+nav a { font-size: 1rem; color: #fff; padding: 7px 20px; text-decoration: none; transition: background 0.3s; }
+nav a:hover { background: #8ED600; }
+.container { display: block; margin: 0 auto; max-width: 100%; background: #F9FFF2; min-height: 100vh; }
+.konten { padding: 1rem 1rem 1rem 2rem; }
+.ilustrasi img { max-width: 100%; border-radius: 13px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(45%, 1fr)); gap: 1.5rem; padding-left: 0; }
+.card, .kotak, .list { background: linear-gradient(135deg, rgba(255, 255, 255, .4), #fff); border-radius: 13px; box-shadow: 0 2px 8px rgba(135,255,0,.4);
+/* transition: transform 0.3s; */
+}
+/* .card:hover { transform: translateY(-5px); */
+}
+.card img { width: 100%; height: auto; }
+.card-content { padding: 1rem; }
+footer { font-size: .7rem; background: #1A3C21; color: #fff; text-align: center; padding: 20px; margin-top: 3rem; }
+.kotak { display: block; margin: 1rem 1rem 1rem 0; padding: 1.2rem; }
+.teks { max-width: 65ch; }
+.list { margin: 1rem 2rem; }
+
+.menu { position: fixed; top: 1rem; right: 1rem; width: 100%; display: grid;
+justify-content: end;
+/* justify-self: end; align-self: end; */
+}
+.menu-toggle { justify-content: center; display: none; width: 40px; background: #8ED600; padding: 3.5px 10px 3px; cursor: pointer; color: #fff; font-size: 1.2em; border-radius: 5px; box-shadow: -2px 2px 5px rgba(0,0,0,0.2); }
+blockquote { font-style: italic; font-size: 1.1rem;
+/*  border-left: 4px solid #a78bfa; */
+border-left: 4px solid #00ff00; border-right: 4px solid #00ff00; padding: 0.75rem 1rem; margin: 1rem; background: rgba(255, 255, 255, .6); }
+.terjemah, .hadits { font-style: italic; font-size: 1.1rem; max-width: 70ch; }
+.arabic { text-align: right; margin-right: .5rem; font-family: noorehira, serif; font-size: 1.2rem; line-height: 1.7; }
+ul li::marker { content: "◈ "; color: #333; font-size: .8em; }
+.list li a { font-size: 1.2rem; text-decoration: none; color: #333; }
+    
+@media(min-width: 860px) {
+body { background: #343434; background-image: url("data:image/svg+xml,%3Csvg width='50' height='55' viewBox='0 0 80 88' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22 21.91V26h-2c-9.94 0-18 8.06-18 18 0 9.943 8.058 18 18 18h2v4.09c8.012.722 14.785 5.738 18 12.73 3.212-6.99 9.983-12.008 18-12.73V62h2c9.94 0 18-8.06 18-18 0-9.943-8.058-18-18-18h-2v-4.09c-8.012-.722-14.785-5.738-18-12.73-3.212 6.99-9.983 12.008-18 12.73zM54 58v4.696c-5.574 1.316-10.455 4.428-14 8.69-3.545-4.262-8.426-7.374-14-8.69V58h-5.993C12.27 58 6 51.734 6 44c0-7.732 6.275-14 14.007-14H26v-4.696c5.574-1.316 10.455-4.428 14-8.69 3.545 4.262 8.426 7.374 14 8.69V30h5.993C67.73 30 74 36.266 74 44c0 7.732-6.275 14-14.007 14H54zM42 88c0-9.94 8.06-18 18-18h2v-4.09c8.016-.722 14.787-5.738 18-12.73v7.434c-3.545 4.262-8.426 7.374-14 8.69V74h-5.993C52.275 74 46 80.268 46 88h-4zm-4 0c0-9.943-8.058-18-18-18h-2v-4.09c-8.012-.722-14.785-5.738-18-12.73v7.434c3.545 4.262 8.426 7.374 14 8.69V74h5.993C27.73 74 34 80.266 34 88h4zm4-88c0 9.943 8.058 18 18 18h2v4.09c8.012.722 14.785 5.738 18 12.73v-7.434c-3.545-4.262-8.426-7.374-14-8.69V14h-5.993C52.27 14 46 7.734 46 0h-4zM0 34.82c3.213-6.992 9.984-12.008 18-12.73V18h2c9.94 0 18-8.06 18-18h-4c0 7.732-6.275 14-14.007 14H14v4.696c-5.574 1.316-10.455 4.428-14 8.69v7.433z' fill='%23b8b8b8' fill-opacity='0.2' fill-rule='evenodd'/%3E%3C/svg%3E"); }
+header { background-position: center; border-bottom: 0; }
+.container { max-width: 980px; }
+nav a { border-right: 1px solid #fff; }
+.text { width: 70ch; }
+blockquote { width: 70ch; justify-self: center; }
+.ilustrasi img { display: block; margin: 1rem auto; max-width: 70%; }
+}
+
+@media(max-width: 768px) {
+.cards { display: block; }
+.card { margin-bottom: 1rem; }
+nav { display: none; flex-direction: column; }
+nav.show { display: flex; width: 150px; position: fixed; top: 4.5rem; right: 0; align-self: end; }
+nav { border-radius: 15px 0 0 15px; }
+nav a { border-bottom: 1px dashed #fff; }
+nav a:last-child { border-bottom: 0; }
+.menu-toggle { display: block; }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title></title>
+<meta name="description" content="" />
+<meta name="keyword" content="" />
+<link href="stylesheet.css" rel="stylesheet" />
+</head>
+<body>
+<div class="container">
+
+<div id="include-header">
+</div>
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('include-header').innerHTML = data;
+    });
+</script>
+
+<div class="menu" id="menu">  
+  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+</div>
+
+<nav id="navbar">
+</nav>
+<script>
+  fetch('nav.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('navbar').innerHTML = data;
+    });
+</script>
+
+<script>
+const menuToggle = document.getElementById('menu-toggle');
+  const navbar = document.getElementById('navbar');
+  menuToggle.addEventListener('click', () => {
+    navbar.classList.toggle('show');
+  });
+</script>
+
+<div class="konten">
+<h1>Tentang</h1>
+<p>Website ini hanyalah situs dakwah Islam personal yang tidak bekerja sama dengan organisasi/kelompok tertentu. Website ini hanya menganut ajaran yang satu yaitu Islam.</p>
+<p>
+Tentang saya:</p>
+<p>april ynt.<br />
+Magelang, Jawa Tengah<br />
+Indonesia.</p>
+
+<a href="https://www.facebook.com/profile.php?id=61550107204825" target="_blank"> Profil Facebook.</a>
+
+</div>
+
+<div id="include-footer">
+</div>
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('include-footer').innerHTML = data;
+    });
+</script>
+
+</div>
+</body>
+</html>

@@ -1,2 +1,165 @@
-Website sedang dibangun.<br />
-Terimakasih.
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Template Keren Mobile Ready</title>
+<link href="stylesheet.css" rel="stylesheet" />
+</head>
+<body>
+<div class="container">
+
+<div id="include-header">
+</div>
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('include-header').innerHTML = data;
+    });
+</script>
+
+<div class="menu" id="menu">  
+  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+</div>
+
+<nav id="navbar">
+</nav>
+<script>
+  fetch('nav.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('navbar').innerHTML = data;
+    });
+</script>
+
+<script>
+const menuToggle = document.getElementById('menu-toggle');
+  const navbar = document.getElementById('navbar');
+  menuToggle.addEventListener('click', () => {
+    navbar.classList.toggle('show');
+  });
+</script>
+
+<div class="konten">
+<div class="text">
+<p>Dunia ini hanya sementara, semua akan ditinggalkan, hanya amal yang akan diperhitungkan. Balasan amal kebaikan yang terbaik adalah di Akhirat.</p>
+<p>Allah Subhanahu wa Ta'ala berfirman:</p>
+</div>
+<p class="arabic">
+اَلْمَالُ وَالْبَنُوْنَ زِيْنَةُ الْحَيٰوةِ الدُّنْيَاۚ وَالْبٰقِيٰتُ الصّٰلِحٰتُ خَيْرٌ عِنْدَ رَبِّكَ ثَوَابًا وَّخَيْرٌ اَمَلًا
+</p>
+<blockquote>"Harta dan anak-anak adalah perhiasan kehidupan dunia, sedangkan amal kebajikan yang abadi (pahalanya) adalah lebih baik balasannya di sisi Tuhanmu serta lebih baik untuk menjadi harapan."<br />
+(Al-Kahf [18]: 46)</blockquote>
+
+<h3>Renungan saat ini:</h3>
+
+  <section class="cards">
+    <div class="card">
+
+      <div class="card-content">
+        <h3>Orang yang Tidak Mengharap Pertemuan Dengan Allah SwT.</h3>
+<p>Allah Subhanahu wa Ta'ala berfirman:</p>
+<p class="arabic">
+اِنَّ الَّذِيْنَ لَا يَرْجُوْنَ لِقَاۤءَنَا وَرَضُوْا بِالْحَيٰوةِ الدُّنْيَا وَاطْمَـَٔنُّوْا بِهَا وَالَّذِيْنَ هُمْ عَنْ اٰيٰتِنَا غٰفِلُوْنَۙ
+</p>
+<p class="terjemah">Sesungguhnya orang-orang yang tidak mengharapkan pertemuan dengan Ku (di akhirat), merasa puas dengan kehidupan dunia, dan merasa tenteram dengannya, serta orang-orang yang lalai terhadap ayat-ayat Ku,</p>
+<p class="arabic">
+اُولٰۤىِٕكَ مَأْوٰىهُمُ النَّارُ بِمَا كَانُوْا يَكْسِبُوْنَ
+</p>
+<p class="terjemah">mereka itu tempatnya adalah neraka karena apa yang selalu mereka kerjakan.<br />
+(Yūnus [10]: 7-8)
+</p>
+      </div>
+    </div>
+<div class="card">
+      <div class="card-content">
+        <h3>Janji Allah SwT. Itu Benar</h3>
+        <p class="arabic">يٰٓاَيُّهَا النَّاسُ اِنَّ وَعْدَ اللّٰهِ حَقٌّ فَلَا تَغُرَّنَّكُمُ الْحَيٰوةُ الدُّنْيَاۗ وَلَا يَغُرَّنَّكُمْ بِاللّٰهِ الْغَرُوْرُ
+</p>
+<p class="terjemah">Wahai manusia, sesungguhnya janji Allah itu benar. Maka, janganlah sekali-kali kehidupan dunia memperdayakan kamu dan janganlah (setan) yang pandai menipu memperdayakan kamu tentang Allah.</p>
+<p class="arabic">
+اِنَّ الشَّيْطٰنَ لَكُمْ عَدُوٌّ فَاتَّخِذُوْهُ عَدُوًّاۗ اِنَّمَا يَدْعُوْا حِزْبَهٗ لِيَكُوْنُوْا مِنْ اَصْحٰبِ السَّعِيْرِۗ
+</p>
+<p class="terjemah">Sesungguhnya setan itu musuh bagimu. Maka, perlakukanlah ia sebagai musuh! Sesungguhnya setan itu hanya mengajak golongannya agar mereka menjadi penghuni (neraka) Sa‘ir (yang menyala-nyala).</p>
+<p class="arabic">
+اَلَّذِيْنَ كَفَرُوْا لَهُمْ عَذَابٌ شَدِيْدٌ ەۗ وَالَّذِيْنَ اٰمَنُوْا وَعَمِلُوا الصّٰلِحٰتِ لَهُمْ مَّغْفِرَةٌ وَّاَجْرٌ كَبِيْرٌ
+</p>
+<p class="terjemah">Orang-orang yang kufur bagi mereka azab yang sangat keras, (sedangkan) orang-orang yang beriman dan beramal saleh bagi mereka ampunan dan pahala yang besar.<br />
+(Fāṭir [35]: 5-7)
+</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-content">
+        <h3>Menghalang-halangi dari Jalan Allah SwT.</h3>
+        <p>Allah S.W.T.  berfirman:</p><p class="arabic">
+اِنَّ الَّذِيْنَ كَفَرُوْا وَصَدُّوْا عَنْ سَبِيْلِ اللّٰهِ ثُمَّ مَاتُوْا وَهُمْ كُفَّارٌ فَلَنْ يَّغْفِرَ اللّٰهُ لَهُمْ
+فَلَا تَهِنُوْا وَتَدْعُوْٓا اِلَى السَّلْمِۖ وَاَنْتُمُ الْاَعْلَوْنَۗ وَاللّٰهُ مَعَكُمْ وَلَنْ يَّتِرَكُمْ اَعْمَالَكُمْ</p>
+<p class="terjemah">Sesungguhnya orang-orang yang kafir dan menghalang-halangi (orang lain) dari jalan Allah, kemudian mereka mati dalam keadaan kafir, Allah tidak akan mengampuni mereka.
+Maka, janganlah kamu lemah dan mengajak berdamai, sebab kamulah yang lebih unggul. Allah besertamu dan tidak akan mengurangi (pahala) amal-amalmu.<br />
+(Qur'an Surah: Muḥammad [47]: 34-35)
+</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-content">
+        <h3>Perdagangan yang Tidak Akan Rugi</h3>
+<p>Allah Subhanahu wa Ta'ala berfirman:</p> 
+<p class="arabic">
+اِنَّ الَّذِيْنَ يَتْلُوْنَ كِتٰبَ اللّٰهِ وَاَقَامُوا الصَّلٰوةَ وَاَنْفَقُوْا مِمَّا رَزَقْنٰهُمْ سِرًّا وَّعَلَانِيَةً يَّرْجُوْنَ تِجَارَةً لَّنْ تَبُوْرَۙ
+
+لِيُوَفِّيَهُمْ اُجُوْرَهُمْ وَيَزِيْدَهُمْ مِّنْ فَضْلِهٖۗ اِنَّهٗ غَفُوْرٌ شَكُوْرٌ
+</p>
+<p class="terjemah">Sesungguhnya orang-orang yang selalu membaca Kitab Allah (Al-Qur’an), menegakkan salat, dan menginfakkan sebagian rezeki yang Kami anugerahkan kepadanya secara sembunyi-sembunyi dan terang-terangan, mereka itu mengharapkan perdagangan yang tidak akan pernah rugi.</p>
+
+<p class="terjemah">(Demikian itu) agar Allah menyempurnakan pahala mereka dan menambah karunia-Nya. Sesungguhnya Allah Maha Pengampun lagi Maha Mensyukuri.<br />
+(Fāṭir [35]: 29-30)
+</p>
+      </div>
+    </div>
+    <div class="card">
+
+      <div class="card-content">
+        <h3>Binasanya Kaum 'Ad</h3>
+<p>Allah Subhanahu wa Ta'ala berfirman:</p>
+
+<p class="arabic">
+وَتِلْكَ عَادٌ  ۖجَحَدُوْا بِاٰيٰتِ رَبِّهِمْ وَعَصَوْا رُسُلَهٗ وَاتَّبَعُوْٓا اَمْرَ كُلِّ جَبَّارٍ عَنِيْدٍ
+</p>
+<p class="terjemah">Itulah (kaum) ‘Ad. Mereka mengingkari tanda-tanda (kekuasaan) Tuhan, mendurhakai rasul-rasul-Nya, dan menuruti perintah semua penguasa yang sewenang-wenang lagi keras kepala.</p>
+<p class="arabic">
+وَاُتْبِعُوْا فِيْ هٰذِهِ الدُّنْيَا لَعْنَةً وَّيَوْمَ الْقِيٰمَةِ ۗ اَلَآ اِنَّ عَادًا كَفَرُوْا رَبَّهُمْ ۗ اَلَا بُعْدًا لِّعَادٍ قَوْمِ هُوْدٍ 
+</p>
+<p class="terjemah">Mereka selalu diikuti dengan laknat di dunia ini dan (begitu pula kelak) di hari Kiamat. Ingatlah, sesungguhnya (kaum) ‘Ad itu kufur kepada Tuhan mereka. Ingatlah bahwa (kaum) ‘Ad, yakni (kaum) Hud, benar-benar telah binasa.<br />
+(Hūd [11]: 59-60)
+</p>
+      </div>
+    </div>
+<div class="card">
+      <div class="card-content">
+        <h3>Nasihat yang Menyentuh</h3>
+<p>Dari Al Irbadh bin Sariyah, ia berkata, "Pada suatu hari setelah sholat shubuh Rasulullah ﷺ menasihati kami dengan nasihat yang menyentuh. Karena nasihat itu, air mata berderai dan hati bergetar."
+Seseorang berkata "Sesungguhnya ini adalah nasihat orang yang akan pergi (berpisah).
+Apa saja yang engkau amanatkan kepada kami, wahai Rasulullah?"
+Beliau bersabda, "Aku berwasiat kepada kalian agar bertakwa kepada Allah, mendengar dan taat (atas perintah-Nya), meskipun seorang hamba sahaya dari suku Habsyi (yang menjadi pemimpin kalian). Sesungguhnya siapa saja yang masih tetap hidup (berumur panjang) di antara kalian maka ia akan melihat terjadinya banyak perselisihan. Hindarilah perkara-perkara yang baru (bid'ah), sesungguhnya bid'ah itu sesat. Siapa saja di antara kalian yang menjumpai hal itu maka hendaklah ia berpegang teguh pada sunnahku dan sunnah para khulafaur-rasyidin yang diberi petunjuk. Gigitlah hal itu dengan gigi geraham (Pegang teguhlah sunnah itu erat-erat)."<br />
+Shahih: Ibnu Majah (442).
+</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div id="include-footer">
+</div>
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('include-footer').innerHTML = data;
+    });
+</script>
+
+</div>
+</body>
+</html>
