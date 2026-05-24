@@ -41,6 +41,11 @@ const menuToggle = document.getElementById('menu-toggle');
   menuToggle.addEventListener('click', () => {
     navbar.classList.toggle('show');
   });
+  document.addEventListener('click', function (e) {
+   if ( !navbar.contains(e.target) && !menuToggle.contains(e.target) ) {
+     navbar.classList.remove('show');
+   }
+ });
 </script>
 
 <div class="konten">

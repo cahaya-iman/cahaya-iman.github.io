@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title></title>
+<meta name="description" content="" />
+<meta name="keyword" content="" />
+<link href="stylesheet.css" rel="stylesheet" />
+</head>
+<body>
+<div class="container">
+
+<div id="include-header">
+</div>
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('include-header').innerHTML = data;
+    });
+</script>
+
+<div class="menu" id="menu">  
+  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+</div>
+
+<nav id="navbar">
+</nav>
+<script>
+  fetch('nav.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('navbar').innerHTML = data;
+    });
+</script>
+
+<script>
+const menuToggle = document.getElementById('menu-toggle');
+  const navbar = document.getElementById('navbar');
+  menuToggle.addEventListener('click', () => {
+    navbar.classList.toggle('show');
+  });
+  document.addEventListener('click', function (e) {
+   if ( !navbar.contains(e.target) && !menuToggle.contains(e.target) ) {
+     navbar.classList.remove('show');
+   }
+ });
+</script>
+
+<div class="konten">
+<h1>Haji Mabrur</h1>
+<p>Urutan dasar pelaksanaan ibadah haji yang mabrur (yang diterima) mengikuti manasik (tata cara) yang telah ditetapkan berdasarkan syariat Islam.</p>
+<div class="ilustrasi"><img src="images/gambar-ilustrasi-mina.jpg" alt="Gambar ilustrasi Mina - Arab Saudi" /></div>
+<p>Secara garis besar, untuk haji Tamattu' (yang paling umum dilakukan jamaah Indonesia), jamaah melakukan Umrah terlebih dahulu, kemudian membuka pakaian ihram, lalu mengenakannya lagi untuk Haji, urutannya adalah:</p>
+<h3>1. Ihram dari Miqat (Untuk Umrah)</h3>
+<p>Di miqat (Bir Ali atau bandara), Mandi sunnah, memakai pakaian ihram. Niat Umrah dengan mengucapkan "Labbaik Allahumma 'Umran".</p>
+<p>Mulai bertalbiyah untuk umrah.</p>
+<p class="hadits">...dari Abu Bakar Ash-Shiddiq: Rasulullah ﷺ ditanya tentang haji yang utama? Beliau menjawab, "Mengeraskan bacaan talbiyah dan menyembelih binatang. "<br>Shahih: Ibnu Majah (2924)</p>
+<h3>2. Tawaf Qudum (Tawaf Kedatangan) di Makkah (disunahkan, bukan rukun)</h3>
+<p>Setiba di Makkah, melakukan tawaf mengelilingi Ka'bah 7 putaran.</p>
+<p>Kemudian:</p>
+<ul>
+  <li>Shalat 2 rakaat di belakang Maqam Ibrahim (jika memungkinkan).</li>
+  <li>Minum air zamzam.</li>
+</ul>
+<blockquote>
+  <p>Saat akan mulai berjalan mengelilingi Ka'bah (tawaf umrah), talbiyah dihentikan dan diganti dengan doa iftitah/ziarah tawaf.</p>
+</blockquote>
+<h3>3. Sa'i antara Shafa dan Marwah</h3>
+<p>Berlari-lari kecil (sa'i) dari bukit Shafa ke Marwah sebanyak 7 kali (dimulai dari Shafa, berakhir di Marwah).</p>
+<p>Sa'i (sa'i umrah) dilakukan setelah tawaf qudum.</p>
+<h3>4. Tahallul</h3>
+<p>Setelah sa'i, jamaah tahallul (umrah) dan memendekkan rambut.</p>
+<blockquote>
+  <p>Setelah ini, status ihram berubah menjadi "umrah selesai" dan boleh melakukan semua hal yang sebelumnya dilarang selama ihram (seperti memakai pakaian biasa, memakai wangi-wangian, dll) hingga nanti masuk kembali ke ihram untuk haji pada tanggal 8 Dzulhijjah.</p>
+</blockquote>
+<h3>5. Kembali ke keadaan ihram untuk Haji pada 8 Dzulhijjah (Tarwiyah)</h3>
+<p>Di pondokan masing-masing, mandi, memakai pakaian ihram lagi, dan niat Haji dengan mengucapkan "Labbaik Allahumma Hajjan".</p>
+<ul>
+  <li>Mulai bertalbiyah untuk Haji.</li>
+  <li>Berangkat menuju Mina sebelum waktu Zhuhur dan bermalam di sana.</li>
+</ul>
+<h3>6. Wukuf di Arafah (9 Dzulhijjah) – RUKUN HAJI</h3>
+<p>Berada di padang Arafah mulai dari tergelincir matahari (setelah Zhuhur) hingga terbit fajar 10 Dzulhijjah.</p>
+<ul>
+  <li>Disunahkan untuk banyak berdoa, dzikir, istighfar.</li>
+  <li>Wukuf adalah inti haji. Tanpanya, haji tidak sah.</li>
+</ul>
+<h3>7. Mabit (bermalam) di Muzdalifah (malam 10 Dzulhijjah)</h3>
+<p>Setelah matahari terbenam di Arafah, berangkat ke Muzdalifah.</p>
+<ul>
+  <li>Shalat Maghrib dan Isya (jamak qashar) dilaksanakan di Muzdalifah.</li>
+  <li>Bermalam hingga sebelum terbit fajar, disunahkan mengumpulkan kerikil untuk lempar jumrah (7 butir atau lebih).</li>
+</ul>
+<blockquote>
+  <p>Boleh langsung berangkat ke Mina setelah tengah malam bagi yang lemah (lansia, sakit, wanita, anak-anak).</p>
+</blockquote>
+<h3>8. Melempar Jumrah Aqabah (Jamarat Al-Kubra) di Mina (10 Dzulhijjah – Hari Nahr)</h3>
+<p>Setelah terbit matahari (waktu dhuha), melempar 7 kerikil ke Jumrah Aqabah sambil bertakbir.</p>
+<blockquote>
+  <p>Talbiyah berakhir sampai saat melempar Jumrah Aqabah pada tanggal 10 Dzulhijjah ini. Ketika hendak melempar kerikil pertama ke Jumrah Aqabah, talbiyah dihentikan. Saat itulah mulai bertakbir ("Allahu Akbar") bersamaan dengan lemparan.</p>
+</blockquote>
+<p>Kemudian:</p>
+<ul>
+  <li>Menyembelih dam/hady</li>
+</ul>
+<blockquote>
+  <p>Jangan bercukur dan mengganti pakaian ihram sebelum hewan hadyu/dam ini sampai ditempat penyembelihan.</p>
+</blockquote>
+<ul>
+  <li>Setelah itu, tahallul &amp; mencukur/ memotong rambut – disini disebut Tahallul Awwal (haji).</li>
+</ul>
+<blockquote>
+  <p>Setelah tahallul awwal, semua larangan ihram telah hilang kecuali berhubungan suami-istri.</p>
+</blockquote>
+<h3>9. Tawaf Ifadhah (Tawaf Haji) dan Sa'i Haji – RUKUN HAJI</h3>
+<p>Pergi ke Makkah untuk melakukan Tawaf Ifadhah (mengelilingi Ka'bah 7 putaran).</p>
+<ul>
+  <li>Dilanjutkan dengan Sa'i (sa'i haji).</li>
+  <li>Lalu Tahallul Tsani.</li>
+</ul>
+<blockquote>
+  <p>Setelah tahallul tsani, semua larangan ihram termasuk hubungan suami-istri telah halal, namun tidak perlu bercukur lagi.</p>
+</blockquote>
+<h3>10. Mabit di Mina pada Hari Tasyrik (11, 12, 13 Dzulhijjah)</h3>
+<p>Kembali ke Mina dan bermalam.</p>
+<ul>
+  <li>Setiap hari (setelah matahari tergelincir), melempar 3 jumrah (Ula, Wustha, Aqabah) masing-masing 7 kerikil.</li>
+</ul>
+<h3>11. Tawaf Wada' (Tawaf Perpisahan)</h3>
+<p>Sebelum meninggalkan Makkah, melakukan tawaf wada' 7 putaran (wajib bagi yang tidak hamil atau haid).</p>
+<p>Setelah ini, perjalanan haji selesai.</p>
+<hr />
+<h2>Catatan untuk haji tamattu' (mayoritas jamaah haji Indonesia):</h2>
+<p>Jika melaksanakan umrah kemudian haji (haji tamattu') wajib menyembelih hewan Hady (dam), ini berbeda dengan kurban Hari Raya Idul Adha.</p>
+<p>Jamaah haji dari Indonesia mayoritas melaksanakan haji tamattu', biasanya tidak membawa hewan kurban, tapi ada kewajiban menyembelih hady/dam ini (ada di surat Al-Baqarah: 196), dan biasanya sudah masuk dalam biaya yang dibayar (panitia).</p>
+<blockquote>
+  <p>Jika membawa hewan kurban sejak awal keberangkatan haji, misalnya membeli disana jauh hari sebelum ihram, maka laksanakanlah haji Qiran. Sepertinya ini jarang terjadi untuk jamaah Indonesia.</p>
+</blockquote>
+<p class="hadits">Rasulullah saw. bersabda: Barang siapa yang membawa hewan sembelihan, maka sebaiknya ia berihram haji dan umrah (haji Qiran), dan jangan bertahallul dahulu hingga ia bertahallul untuk keduanya secara bersamaan...<br>HR. Muslim, 2108.</p>
+<hr />
+<h2>Catatan penting untuk haji yang mabrur:</h2>
+<ul>
+  <li>Niat ikhlas karena Allah semata.</li>
+  <li>Menghindari maksiat, rafats (ucapan/ perbuatan kotor), dan jidal (bertengkar/ debat kusir) selama ihram.</li>
+  <li>Menunaikan dengan sabar, tawadhu', dan sesuai tuntunan Nabi ﷺ.</li>
+  <li>Biaya dari sumber halal.</li>
+  <li>Menjaga hubungan baik dengan sesama jamaah dan membantu jika mampu.</li>
+</ul>
+<p>InsyaAllah. <br />Wallahu a'lam.</p>
+</div>
+
+<div id="include-footer">
+</div>
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('include-footer').innerHTML = data;
+    });
+</script>
+
+</div>
+</body>
+</html>
