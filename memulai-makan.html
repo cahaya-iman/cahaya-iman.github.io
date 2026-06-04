@@ -47,9 +47,10 @@ const menuToggle = document.getElementById('menu-toggle');
     navbar.classList.toggle('show');
   });
 </script>
+<div class="layout">
+<div>
 
 <div class="konten">
-<div class="text">
 <h1>Manfaat Menyebut Nama Allah Saat Hendak Makan &amp; Minum</h1>
 <p>Makan dan minum adalah kebutuhan dasar setiap makhluk hidup. Setiap hari kita melakukannya berkali-kali untuk mengisi tenaga dan menjaga kesehatan tubuh.</p>
 <div class="ilustrasi"><img src="images/sup-sawi-hijau.jpg" alt="Gambar sup sawi hijau" /></div>
@@ -83,6 +84,19 @@ const menuToggle = document.getElementById('menu-toggle');
   <li>Menenangkan jiwa dan raga</li>
 </ul>
 <p>Mulai hari ini, jadikan kebiasaan: Setiap suapan, setiap tegukan, selalu bermula dengan menyebut Nama Allah.</p>
+</div>
+
+</div>
+<div>
+<div id="include-sidebar">
+</div>
+<script>
+  fetch('sidebar.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('include-sidebar').innerHTML = data;
+    });
+</script>
 </div>
 </div>
 

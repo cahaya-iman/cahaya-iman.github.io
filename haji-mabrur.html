@@ -47,9 +47,9 @@ const menuToggle = document.getElementById('menu-toggle');
    }
  });
 </script>
-
+<div class="layout">
+<div>
 <div class="konten">
-<div class="text">
 <h1>Haji Mabrur</h1>
 <p>Urutan dasar pelaksanaan ibadah haji yang mabrur (yang diterima) mengikuti manasik (tata cara) yang telah ditetapkan berdasarkan syariat Islam.</p>
 <div class="ilustrasi"><img src="images/gambar-ilustrasi-mina.jpg" alt="Gambar ilustrasi Mina - Arab Saudi" /></div>
@@ -154,7 +154,18 @@ const menuToggle = document.getElementById('menu-toggle');
 <p>InsyaAllah. <br />Wallahu a'lam.</p>
 </div>
 </div>
-
+<div>
+<div id="include-sidebar">
+</div>
+<script>
+  fetch('sidebar.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('include-sidebar').innerHTML = data;
+    });
+</script>
+</div>
+</div>
 <div id="include-footer">
 </div>
 <script>

@@ -8,60 +8,57 @@
 </head>
 <body>
 <div class="container">
-
 <div id="include-header">
 </div>
+<div class="menu" id="menu">  
+  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+</div>
+<nav id="navbar">
+</nav>
+
 <script>
   fetch('header.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('include-header').innerHTML = data;
     });
-</script>
-
-<div class="menu" id="menu">  
-  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-</div>
-
-<nav id="navbar">
-</nav>
-<script>
   fetch('nav.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('navbar').innerHTML = data;
     });
 </script>
-
-<script>
-const menuToggle = document.getElementById('menu-toggle');
-  const navbar = document.getElementById('navbar');
-  menuToggle.addEventListener('click', () => {
-    navbar.classList.toggle('show');
-  });
-document.addEventListener('click', function (e) {
-   if ( !navbar.contains(e.target) && !menuToggle.contains(e.target) ) {
-     navbar.classList.remove('show');
-   }
- });
-</script>
-
+<div class="layout">
+<div>
 <div class="konten">
-<div class="text">
+
 <p>Dunia ini hanya sementara, semua akan ditinggalkan, hanya amal yang akan diperhitungkan. Balasan amal kebaikan yang terbaik adalah di Akhirat.</p>
 <p>Allah Subhanahu wa Ta'ala berfirman:</p>
-</div>
+
 <p class="arabic">
 اَلْمَالُ وَالْبَنُوْنَ زِيْنَةُ الْحَيٰوةِ الدُّنْيَاۚ وَالْبٰقِيٰتُ الصّٰلِحٰتُ خَيْرٌ عِنْدَ رَبِّكَ ثَوَابًا وَّخَيْرٌ اَمَلًا
 </p>
 <blockquote>"Harta dan anak-anak adalah perhiasan kehidupan dunia, sedangkan amal kebajikan yang abadi (pahalanya) adalah lebih baik balasannya di sisi Tuhanmu serta lebih baik untuk menjadi harapan."<br />
 (Al-Kahf [18]: 46)</blockquote>
-
+<br />
+<h2>Tulisan Terbaru:</h2>
+<div class="card terbaru">
+      <div class="card-content">
+        <h3><a href="pengobatan.html">Pengobatan yang Mujarab dalam Islam: Bekam, Jinten Hitam, Madu Murni, dan Air Zamzam</a></h3>
+<div class="thumbnail"><img src="images/madu-lebah-500.webp" alt="Madu Lebah" />Photo by <a href="https://unsplash.com/@anitaaustvika?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Anita Austvika</a> on <a href="https://unsplash.com/photos/a-piece-of-cake-on-a-plate-with-a-spoon-oTqQqfOccMs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></div>
+<p>Islam mengajarkan umatnya untuk berikhtiar dalam menjaga kesehatan dan mengobati penyakit. Selain pengobatan medis yang terus berkembang, terdapat beberapa pengobatan dan bahan alami yang disebutkan dalam hadis-hadis Nabi Muhammad ﷺ, yang dikenal luas sebagai bagian dari pengobatan Islami.</p>
+<p>
+Perlu dipahami bahwa kesembuhan sejatinya berasal dari Allah SWT. Obat hanyalah sarana, sedangkan hasilnya berada dalam kehendak-Nya.
+</p>
+<p><a href="pengobatan.html">Baca selengkapnya</a></p>
+      </div>
+    </div>
+<br />
 <h3>Renungan saat ini:</h3>
 
   <section class="cards">
+  
     <div class="card">
-
       <div class="card-content">
         <h3>Orang yang Tidak Mengharap Pertemuan Dengan Allah SwT.</h3>
 <p>Allah Subhanahu wa Ta'ala berfirman:</p>
@@ -77,6 +74,7 @@ document.addEventListener('click', function (e) {
 </p>
       </div>
     </div>
+    
 <div class="card">
       <div class="card-content">
         <h3>Janji Allah SwT. Itu Benar</h3>
@@ -143,7 +141,7 @@ Maka, janganlah kamu lemah dan mengajak berdamai, sebab kamulah yang lebih unggu
     </div>
 <div class="card">
       <div class="card-content">
-        <h3>Nasihat yang Menyentuh</h3>
+        <h3>Nasehat yang Menyentuh</h3>
 <p>Dari Al Irbadh bin Sariyah, ia berkata, "Pada suatu hari setelah sholat shubuh Rasulullah ﷺ menasihati kami dengan nasihat yang menyentuh. Karena nasihat itu, air mata berderai dan hati bergetar."
 Seseorang berkata "Sesungguhnya ini adalah nasihat orang yang akan pergi (berpisah).
 Apa saja yang engkau amanatkan kepada kami, wahai Rasulullah?"
@@ -154,7 +152,19 @@ Shahih: Ibnu Majah (442).
     </div>
   </section>
 </div>
-
+</div>
+<div>
+<div id="include-sidebar">
+</div>
+<script>
+  fetch('sidebar.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('include-sidebar').innerHTML = data;
+    });
+</script>
+</div>
+</div>
 <div id="include-footer">
 </div>
 <script>
@@ -163,6 +173,16 @@ Shahih: Ibnu Majah (442).
     .then(data => {
       document.getElementById('include-footer').innerHTML = data;
     });
+    const menuToggle = document.getElementById('menu-toggle');
+  const navbar = document.getElementById('navbar');
+  menuToggle.addEventListener('click', () => {
+    navbar.classList.toggle('show');
+  });
+document.addEventListener('click', function (e) {
+   if ( !navbar.contains(e.target) && !menuToggle.contains(e.target) ) {
+     navbar.classList.remove('show');
+   }
+ });
 </script>
 
 </div>

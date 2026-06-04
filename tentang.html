@@ -47,7 +47,8 @@ const menuToggle = document.getElementById('menu-toggle');
    }
  });
 </script>
-
+<div class="layout">
+<div>
 <div class="konten">
 <h1>Tentang</h1>
 <p>Website ini hanyalah situs dakwah Islam personal yang tidak bekerja sama dengan organisasi/kelompok tertentu. Website ini hanya menganut ajaran yang satu yaitu Islam.</p>
@@ -58,9 +59,20 @@ Magelang, Jawa Tengah<br />
 Indonesia.</p>
 
 <a href="https://www.facebook.com/profile.php?id=61550107204825" target="_blank"> Profil Facebook.</a>
-
 </div>
-
+</div>
+<div>
+<div id="include-sidebar">
+</div>
+<script>
+  fetch('sidebar.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('include-sidebar').innerHTML = data;
+    });
+</script>
+</div>
+</div>
 <div id="include-footer">
 </div>
 <script>
